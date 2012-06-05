@@ -1,0 +1,1 @@
+This directory will contain _ONE_ child directory per macro/plugin that ships with the game.
