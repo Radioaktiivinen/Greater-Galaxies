@@ -1,3 +1,5 @@
+<b> All java classes for this project will be within com.greater.galaxies.* </b>
+
 Entity Naming
 
 Variables shall begin with a lower case letter.
