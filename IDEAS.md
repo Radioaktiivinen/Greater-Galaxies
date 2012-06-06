@@ -20,4 +20,7 @@ Anyway:
 - The map is only revealed once you've explored it (duh moment)
 - Each tile represents something different in each level
 
+----
+#Pending
+The place for pending, but not yet final, ideas.
 
