@@ -2,14 +2,20 @@ Greater-Galaxies V2
 ================
 
 World:
+
 -Ship/Space station (doesnt contain any data, no owner, if i split it in half itll just be 2 space ships/stations)
+
 *Body (multiple possible in 1 ship/space station, a single body is a grid where components are put, multiple means the ship can have rotating parts)
+
 **Component (bodies contain components, which are attached to each other and configured by the player,
 and resources such as air, water, electricity and rock flow through them,
 as well as signals which are also kind of like resources)
 -Player
+
 -Space object (gas cloud, start, asteroid)
+
 -Planet
+
 
 
 The components can be seen from the space view, nothing is abstracted into lets say "Space ship of player A". 
@@ -19,16 +25,26 @@ with the player floating inside.
 
 Gameplay:
 1.Gather resources from components or using components
+
 2.Put in components
+
 3.Resource flows through different components (conveyor->factory->box)
+
 4.Take resulting resource (which can be a component)
+
 5.Float outside space ship in your space suit
+
 6.Remove piece of hull
+
 7.Attach component to something which carries electricity and signals (lets say the component is a lazor)
+
 8.Configure component to take in position data (x,y)
+
 9.Go to your control room and add a control which is directed using the mouse (when youre near it it sends a signal thru the ship with the mouse coords)
 10.Configure the control to send signal to the lazor using the lazors ID or something (ITS LIEK THE INTERNET K)
+
 11.Shoot random noobs poking your ship
+
 
 An important part would be mining resources, buying resources from other ships 
 (you could go near a space station with a biodome and buy food or organic materials or something) and 
