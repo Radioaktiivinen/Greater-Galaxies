@@ -1,4 +1,4 @@
-<b> All java classes for this project will be within com.greater.galaxies.* </b>
+<b> All java classes for this project will be within com.greatergalaxies.* </b>
 
 Entity Naming
 
@@ -22,9 +22,7 @@ Exception: Loop variables and variables with a small scope (less than 20 lines) 
 Only use english names.
 
 It is confusing when mixing languages for names. English is the preferred language because of its spread in the software market and because most libraries used already use english.
-Use name prefixes for identifiers declared in different modules
 
-This avoids name clashes.
 Indentation and Spacing
 
 Braces shall follow "K&R Bracing Style".
