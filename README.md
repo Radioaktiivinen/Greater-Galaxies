@@ -1,49 +1,47 @@
 Greater-Galaxies V2
 ================
 
-Long time ago, a big space ship was launched to space from earth with a mission of habitating mars. Unexpectedly, a solaar particle
-storm occurred, wiping off the magnetic field of earth, destroying all life on earth and damaging the space ship.
-It drifted far into outer space, but the people inside it used the available resources and tools to create small space ships
-which could independently gather resources from the "mother ship" and could be improved and added modules to easily. It took years,
-but finally they managed to complete their work. After followed exponential growth of the world of the last few remaining humans, floating
-somewhere in vast space.
+World:
+-Ship/Space station (doesnt contain any data, no owner, if i split it in half itll just be 2 space ships/stations)
+*Body (multiple possible in 1 ship/space station, a single body is a grid where components are put, multiple means the ship can have rotating parts)
+**Component (bodies contain components, which are attached to each other and configured by the player,
+and resources such as air, water, electricity and rock flow through them,
+as well as signals which are also kind of like resources)
+-Player
+-Space object (gas cloud, start, asteroid)
+-Planet
 
-Planets cannot be landed on due to the modular structure of the space ships. The ships cannot handle big acceleration. Fuel
-is also rare and thus landing on a planet without staying there forever is impossible. Resources are gathered from asteroids and
-produced in factories, biodomes and whatnot.
 
-The structure of the world is:
--World
-*Body (a grid filled with components, components might take multiple grid cells)
-**Component
-*Player
-*Planet/Sun/Big rock
+The components can be seen from the space view, nothing is abstracted into lets say "Space ship of player A". 
+Its just components on different grids connected together floating in space with planets etc.
+with the player floating inside.
 
-Space ships are formed of a single or many bodies. Each body is basically a grid where components are put to.
-Components can be attached and detached by players. Bodies can float inside other bodies if there is space.
-Resources flow through components. Resources are for example air, signal, rock. Empty hallway in the ship would move the
-air resource, so if it leads to space, it quickly becomes empty and the player needs to fix it.
-Signals are ran from controls to engines. When close to controls, GUIs are shown to use them, with an option for setting up
-keyboard shortcuts and such.
-Objects can also be configured. It is kind of like a wiring system with multiple different types of signals and with each component
-deciding what signals to output based on its surroundings, settings and resources coming into it (signals)
 
-Players spawn in a small space station component, made by another player, which will spawn new players and give them small space ships
-as long as there is resources in it (the builder of the station must supply them). This could be used to get more crew to
-your station or if you feel lonely.
+Gameplay:
+1.Gather resources from components or using components
+2.Put in components
+3.Resource flows through different components (conveyor->factory->box)
+4.Take resulting resource (which can be a component)
+5.Float outside space ship in your space suit
+6.Remove piece of hull
+7.Attach component to something which carries electricity and signals (lets say the component is a lazor)
+8.Configure component to take in position data (x,y)
+9.Go to your control room and add a control which is directed using the mouse (when youre near it it sends a signal thru the ship with the mouse coords)
+10.Configure the control to send signal to the lazor using the lazors ID or something (ITS LIEK THE INTERNET K)
+11.Shoot random noobs poking your ship
 
-Another option is to spawn somewhere in space and survive alone until you find other players.
+An important part would be mining resources, buying resources from other ships 
+(you could go near a space station with a biodome and buy food or organic materials or something) and 
+manufacturing the resources with the factories youve built 
+(you can chain together components to make factories which produce complex items out of many simple ones without
+doing it all manually :D)
 
-Players dont own the ships, but the ship parts will have permissions given to certain players, which means if you find a powered
-out spaceship floating in space, you can break in and configure it to obey you (and hope the previous owner didnt add random traps)
-
-The gameplay is mostly building bigger and better space stations which can produce different resources. You can chain up different
-components to create complex automated factories or defence systems.
-Fighting exists, but it is mostly defence against the random trolls who decide to try and destroy you. A Small space ship will always be able
-to escape a bigger one due to accelerating much faster and dodging weapons. If it is 2 big ships, they will harm each other badly, but will probably survive.
-
-However, fighting against AI opponents might be an option, as it doesnt hurt the players ships (which took long to build), or maybe just
-fighting against "natural disasters" like many meteors flying through the area or strong radiation or accidents like fire on the space stations and ships.
+The game is side view 2D, and the player starts out on a planet walking on its surface. He has a basic space ship
+capable of getting to orbit and back, but no fuel. He also has buildings on the planet, letting him to produce fuel for
+the ship out of wood, oil or whatever. He needs to load the ship with water, oxygen, fuel and food to survive in orbit.
+Eventually he has mined the planet for more ores and manufactured more components to his ship, letting him to go mine asteroids
+and such to finally make his ship completely self sustaining, so he can go around in space and lets say make a huge
+space station which provides other players resources and high tech parts and maybe protection.
 
 Project management
 ==================
