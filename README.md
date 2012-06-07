@@ -1,63 +1,13 @@
-Greater-Galaxies V2
+Greater-Galaxies
 ================
 
-World:
+You start out with a single town, and work up to galactic overlord, and then you die and ascend to gain control over the universe. The fun part is that once you've become a galactic overlord you still have to micro all the solar-systems under your command, which makes macros imperative. Macros will be scripted in Lua and will only have client-side repercussions(so they can only do what a play could do).
 
--Ship/Space station (doesnt contain any data, no owner, if i split it in half itll just be 2 space ships/stations)
+You'll be able to zoom in and out as far as your current domain allows, so the village leader can't zoom out to the solar system, and the galactic overlord can't see various control overlays that the ascended players can.
 
-*Body (multiple possible in 1 ship/space station, a single body is a grid where components are put, multiple means the ship can have rotating parts)
+Ascended players have achieved so much that they get their own personal battle-field, all of the universe. They can battle each other directly for control over systems(systems which are controlled by lower players, but the lower players don't know who controls their systems) or to descend other ascended players.
 
-**Component (bodies contain components, which are attached to each other and configured by the player,
-and resources such as air, water, electricity and rock flow through them,
-as well as signals which are also kind of like resources)
--Player
-
--Space object (gas cloud, start, asteroid)
-
--Planet
-
-
-
-The components can be seen from the space view, nothing is abstracted into lets say "Space ship of player A". 
-Its just components on different grids connected together floating in space with planets etc.
-with the player floating inside.
-
-
-Gameplay:
-1.Gather resources from components or using components
-
-2.Put in components
-
-3.Resource flows through different components (conveyor->factory->box)
-
-4.Take resulting resource (which can be a component)
-
-5.Float outside space ship in your space suit
-
-6.Remove piece of hull
-
-7.Attach component to something which carries electricity and signals (lets say the component is a lazor)
-
-8.Configure component to take in position data (x,y)
-
-9.Go to your control room and add a control which is directed using the mouse (when youre near it it sends a signal thru the ship with the mouse coords)
-10.Configure the control to send signal to the lazor using the lazors ID or something (ITS LIEK THE INTERNET K)
-
-11.Shoot random noobs poking your ship
-
-
-An important part would be mining resources, buying resources from other ships 
-(you could go near a space station with a biodome and buy food or organic materials or something) and 
-manufacturing the resources with the factories youve built 
-(you can chain together components to make factories which produce complex items out of many simple ones without
-doing it all manually :D)
-
-The game is side view 2D, and the player starts out on a planet walking on its surface. He has a basic space ship
-capable of getting to orbit and back, but no fuel. He also has buildings on the planet, letting him to produce fuel for
-the ship out of wood, oil or whatever. He needs to load the ship with water, oxygen, fuel and food to survive in orbit.
-Eventually he has mined the planet for more ores and manufactured more components to his ship, letting him to go mine asteroids
-and such to finally make his ship completely self sustaining, so he can go around in space and lets say make a huge
-space station which provides other players resources and high tech parts and maybe protection.
+We'll also need a chat system and a group system.
 
 Project management
 ==================
@@ -97,6 +47,5 @@ Thoughts
 --------
 - Maybe there should be a "task board" where you can accept tasks and report on progress.
 - We really need to find a designer... :/
-
 
 
